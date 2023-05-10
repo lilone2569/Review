@@ -11,7 +11,7 @@ int main(int argc,char *argv[])
 	{
 		case '+':printf("%d + %d = %d\r\n",a,b,a+b);break;
 		case '-':printf("%d - %d = %d\r\n",a,b,a-b);break;
-		case '*':printf("%d * %d = %d\r\n",a,b,a*b);break;
+		case '*':printf("%d * %d = %d\r\n",a,b,a*b);break;    //终端上需要用'*'才行
 		case '/':printf("%d / %d = %d\r\n",a,b,a/b);break;
 	}
 	
