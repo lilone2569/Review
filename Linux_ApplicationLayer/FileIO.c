@@ -1,19 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-//编写带参数的main，实现简易的计算器的功能，能够实现加减乘除。
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+
+
+//1.int open(const char *pathname, int flags);
+//flags:O_RDONLY, O_WRONLY, or O_RDWR
+//O_CREAT,  O_DIRECTORY,  O_EXCL,  O_NOCTTY,  O_NOFOLLOW,  O_TMPFILE, andO_TRUNC.
+
+
+
+
 int main(int argc,char *argv[])
 {
-	int a=atoi(argv[1]);//把字符串转换成数字
-	int b=atoi(argv[3]);
 	
-	switch(*argv[2])
-	{
-		case '+':printf("%d + %d = %d\r\n",a,b,a+b);break;
-		case '-':printf("%d - %d = %d\r\n",a,b,a-b);break;
-		case '*':printf("%d * %d = %d\r\n",a,b,a*b);break;    //终端上需要用'*'才行
-		case '/':printf("%d / %d = %d\r\n",a,b,a/b);break;
-	}
-	
+
+
 	return 0;
 }
