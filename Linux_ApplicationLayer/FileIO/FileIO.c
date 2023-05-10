@@ -15,9 +15,10 @@
 //return:返回一个文件描述符fd
 
 //2.ssize_t write(int fd, const void *buf, size_t count);
-
+//return:success:0 failed:-1
 
 //3.ssize_t read(int fd, void *buf, size_t count);
+//return:success:返回读取到的文件长度  failed:-1
 
 //4.int close(int fd);
 
