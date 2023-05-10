@@ -33,6 +33,13 @@ lseek(fd,0,SEEK_END);
 第三种：将文件的读写位置调整到当前位置的前两个字节
 lseek(fd,-2,SEEK_CUR)
 */
+
+/*
+标准输入0   stdin  从键盘获得输入 /proc/self/fd/0 
+标准输出1   stdout 输出到屏幕（即控制台） /proc/self/fd/1 
+错误输出2   stderr 输出到屏幕（即控制台） /proc/self/fd/2 
+*/
+
 int main(int argc,char *argv[])
 {
 	
