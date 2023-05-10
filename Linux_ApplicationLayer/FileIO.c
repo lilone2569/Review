@@ -5,6 +5,9 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <errno.h>
+
+
 
 //1.int open(const char *pathname, int flags);
 //flags:O_RDONLY, O_WRONLY, or O_RDWR
