@@ -13,7 +13,7 @@
 #define OK      0
 
 
-//通过有名管道实现父进程给子进程发送消息
+//通过有名管道实现父进程给子进程发送消息(有亲缘关系的父子进程)
 int main(int argc,char *argv[])
 {
     int ret;
