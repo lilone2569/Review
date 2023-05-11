@@ -11,7 +11,7 @@
 #define OK      0
 
 
-//实现父子进程相互发消息
+//双管道实现父子进程相互发消息
 int main(int argc,char *argv[])
 {
     int pipefd1[2] = {0},pipefd2[2] = {0};
