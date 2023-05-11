@@ -10,6 +10,7 @@
 #define ERROR  -1
 #define OK      0
 
+//实现父子进程交替报数1-10
 int main(int argc,char *argv[])
 {
     int i = 1;
