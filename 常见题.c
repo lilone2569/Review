@@ -488,3 +488,14 @@ int main(void)
 	return 0;
 }
 
+40. i2c时序
+起始信号：
+SCL 高
+SDA 高-低
+
+停止信号：
+SCL 高
+SDA 低-高
+
+应答信号：
+数据线发送完一个字节后(8bit)第9bit时SCL高电平，如果SDA低电平则表示有效应答ACK，SDA为高电平则为无效应答NACK
